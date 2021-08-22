@@ -10,22 +10,45 @@
   ul li {
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 0px 8px 0px 40px;
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
     list-style-type: none;
-  
+    display:flex;
+    align-items: center;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    height:48px;
   }
-  
+  ul li p{
+    margin:0 !important;
+    padding:0;
+    height:100%; 
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
   ul li:nth-child(odd) {
     background: #f9f9f9;
   }
-  
+  ul li span {
+    z-index: 5;
+    position: absolute;
+    height:100%;
+    width:45px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top:0;
+    right:0;
+  }
+  ul li span:hover {
+    background:red;
+  }
+
   ul li:hover {
     background: #ddd;
   }
