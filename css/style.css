@@ -105,3 +105,19 @@
   .button:hover {
     background-color: #bbb;
   }
+  .radio-area{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .radio-area input{
+    width: unset;
+    margin:15px 15px;
+  }
+
+  .radio-area .el{
+   justify-content: center;
+   align-items: center;
+  }
+ 
